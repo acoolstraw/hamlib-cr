@@ -1,0 +1,31 @@
+name: Hamlib
+ldflags: "-lhamlib"
+packages: hamlib
+destdir: src/
+definitions:
+  amp:
+    includes:
+    - /usr/include/hamlib/amplifier.h
+    - /usr/include/hamlib/amplist.h
+    prefixes:
+    - amp_
+  rig:
+    includes:
+    - /usr/include/hamlib/rig.h
+    - /usr/include/hamlib/rig_dll.h
+    - /usr/include/hamlib/riglist.h
+    prefixes:
+    - rig_
+  rotator:
+    includes:
+    - /usr/include/hamlib/rotator.h
+    - /usr/include/hamlib/rotlist.h
+    prefixes:
+    - rot_
+rename:
+  rules:
+    "*":
+    - pattern: ^Hamlib
+      replacement: ""
+options:
+  import_docstrings: brief
