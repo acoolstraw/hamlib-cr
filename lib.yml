@@ -22,10 +22,10 @@ definitions:
     - /usr/include/hamlib/rotlist.h
     prefixes:
     - rot_
-rename:
-  rules:
-    "*":
-    - pattern: ^Hamlib
-      replacement: ""
+#rename:
+#  rules:
+#    "*":
+#    - pattern: ^Hamlib
+#      replacement: ""
 options:
   import_docstrings: brief

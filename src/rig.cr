@@ -19,14 +19,14 @@ lib Hamlib
     # Renew a cookie
     RigCookieRenew = 2
   end
-  enum CacheT
-    CacheAll   = 0
-    CacheVfo   = 1
-    CacheFreq  = 2
-    CacheMode  = 3
-    CachePtt   = 4
-    CacheSplit = 5
-    CacheWidth = 6
+  enum HamlibCacheT
+    HamlibCacheAll   = 0
+    HamlibCacheVfo   = 1
+    HamlibCacheFreq  = 2
+    HamlibCacheMode  = 3
+    HamlibCachePtt   = 4
+    HamlibCacheSplit = 5
+    HamlibCacheWidth = 6
   end
   enum RigCapsCptrE
     RigCapsVersionCptr   = 0

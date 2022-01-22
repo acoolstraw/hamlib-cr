@@ -322,7 +322,7 @@ lib Hamlib
     step : ValueT
   end
 
-  struct Port
+  struct HamlibPort
     type : HamlibPortType
     fd : LibC::Int
     handle : Void*
@@ -338,20 +338,20 @@ lib Hamlib
     rig : Rig*
   end
 
-  struct PortParmCm108
+  struct HamlibPortParmCm108
     ptt_bitnum : LibC::Int
   end
 
-  struct PortParmGpio
+  struct HamlibPortParmGpio
     on_value : LibC::Int
     value : LibC::Int
   end
 
-  struct PortParmParallel
+  struct HamlibPortParmParallel
     pin : LibC::Int
   end
 
-  struct PortParmSerial
+  struct HamlibPortParmSerial
     rate : LibC::Int
     data_bits : LibC::Int
     stop_bits : LibC::Int
@@ -361,7 +361,7 @@ lib Hamlib
     dtr_state : SerialControlStateE
   end
 
-  struct PortParmUsb
+  struct HamlibPortParmUsb
     vid : LibC::Int
     pid : LibC::Int
     conf : LibC::Int
@@ -371,7 +371,7 @@ lib Hamlib
     product : LibC::Char*
   end
 
-  struct PortPostWriteDate
+  struct HamlibPortPostWriteDate
     tv_sec : LibC::Int
     tv_usec : LibC::Int
   end
@@ -754,7 +754,7 @@ lib Hamlib
   type DcdT = DcdE
   type FreqRangeT = FreqRangeList
   type GranT = Gran
-  type PortT = HamlibPort
+  type HamlibPortT = HamlibPort
   type Rig = SRig
   type RigPortT = RigPortE
 
@@ -763,7 +763,7 @@ lib Hamlib
     c : ConfparamsUC
   end
 
-  union PortParm
+  union HamlibPortParm
     serial : HamlibPortParmSerial
     parallel : HamlibPortParmParallel
     cm108 : HamlibPortParmCm108
@@ -771,7 +771,7 @@ lib Hamlib
     gpio : HamlibPortParmGpio
   end
 
-  union PortType
+  union HamlibPortType
     rig : RigPortT
     ptt : PttTypeT
     dcd : DcdTypeT
