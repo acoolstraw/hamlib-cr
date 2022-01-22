@@ -1,6 +1,6 @@
 # hamlib-cr
 
-Crystal bindings for Hamlib, a ham radio control library for rigs, rotators, tuners, and amplifiers
+Crystal bindings for [Hamlib](https://github.com/Hamlib/Hamlib), a ham radio control library for rigs, rotators, tuners, and amplifiers
 
 Generated using [libgen](https://github.com/olbat/libgen)
 
