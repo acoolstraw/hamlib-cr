@@ -1,3 +1,5 @@
+require "./hamlib/*"
+
 @[Link(ldflags: "`command -v pkg-config > /dev/null && pkg-config --libs hamlib 2> /dev/null|| printf %s '-lhamlib'`")]
 lib Hamlib
   alias AntT = LibC::UInt
