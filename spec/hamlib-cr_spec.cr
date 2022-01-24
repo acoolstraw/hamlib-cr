@@ -1,6 +1,6 @@
 require "./spec_helper"
 
-describe Hamlib::Cr do
+describe Hamlib do
   # TODO: Write tests
 
   it "works" do

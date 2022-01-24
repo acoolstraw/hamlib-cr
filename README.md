@@ -10,7 +10,7 @@ Generated using [libgen](https://github.com/olbat/libgen)
 
    ```yaml
    dependencies:
-     hamlib-cr:
+     hamlib:
        github: acoolstraw/hamlib-cr
    ```
 
@@ -19,7 +19,7 @@ Generated using [libgen](https://github.com/olbat/libgen)
 ## Usage
 
 ```crystal
-require "hamlib-cr"
+require "hamlib"
 ```
 
 TODO: Write usage instructions here
